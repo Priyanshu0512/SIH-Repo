@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard - Care Fusion AI</title>
+  <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>Welcome to the Patient Dashboard</h1>
+      <p>Choose your option:</p>
+    </header>
+
+    <div class="features-container">
+      <div class="feature" id="appointment">
+        <h2>Schedule an Appointment</h2>
+        <p>Book an offline or online appointment with your doctor.</p>
+        <button>Schedule Now</button>
+      </div>
+
+      <div class="feature" id="book-bed">
+        <h2>Book a Bed</h2>
+        <p>Book a bed at the nearest hospital facility.</p>
+        <button>Book Now</button>
+      </div>
+
+      <div class="feature" id="consultation">
+        <h2>Online Consultation</h2>
+        <p>Get online consultation from our medical experts.</p>
+        <button>Consult Now</button>
+      </div>
+
+      <div class="feature" id="medicine">
+        <h2>Medicine Inventory Lookup</h2>
+        <p>Check the availability of medicines in our pharmacy.</p>
+        <button>Check Inventory</button>
+      </div>
+    </div>
+
+    <!-- AI Chatbot section -->
+    <div class="chatbot-container">
+      <div class="chatbot-header">
+        <h3>Care Fusion AI Chatbot</h3>
+        <p>Get prevention tips and instant help using AI!</p>
+      </div>
+      <div class="chatbot-body">
+        <div class="chat-display" id="chat-display"></div>
+        <input type="text" id="chat-input" placeholder="Ask me anything...">
+        <button id="chat-submit">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="dashboard-script.js"></script>
+</body>
+</html>

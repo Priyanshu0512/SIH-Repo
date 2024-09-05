@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #008080, #ADD8E6);
+    /* Gradient background */
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    color: #fff;
+    /* Update this color to your preferred choice */
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.15);
+    /* Transparent white background */
+    backdrop-filter: blur(10px);
+    /* Background blur effect */
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    /* Shadow effect */
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 20%;
+    /* Same height */
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    /* Transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    /* White text color */
+}
+
+.feature p {
+    margin-bottom: 15px;
+    color: #cfcfcf;
+    /* Light grey text color */
+}
+
+.feature button {
+    padding: 10px 20px;
+    background: #00ffae;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.feature button:hover {
+    background: #005fcc;
+    /* Darker blue on hover */
+}
+
+.chatbot-container {
+    position: absolute;
+    top: 80px;
+    /* Adjust this value to position below the header */
+    right: 20px;
+    /* Adjust this value for distance from the right edge */
+    width: 20%;
+    background-color: #f8f9fa;
+    border-left: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chatbot-header {
+    text-align: center;
+    font-size: 18px;
+    color: #1fbd5b;
+    /* White text color */
+    margin-bottom: 20px;
+}
+
+.chatbot-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chat-display {
+    flex: 1;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Transparent background */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 100px;
+    /* Same height */
+}
+
+#chat-input {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Transparent background */
+    color: #fff;
+    /* White text color */
+}
+
+#chat-submit {
+    padding: 10px;
+    background: #00ffae;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#chat-submit:hover {
+    background: #005fcc;
+    /* Darker blue on hover */
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option {
+    background: rgba(255, 255, 255, 0.1);
+    /* Transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.option h3 {
+    margin-bottom: 10px;
+    color: #fff;
+    /* White text color */
+}
+
+.option button {
+    padding: 10px;
+    background: #00ffae;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.option button:hover {
+    background: #005fcc;
+    /* Darker blue on hover */
+}

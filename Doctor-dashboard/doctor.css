@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #008080, #ADD8E6);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+    position: relative;
+    /* Added for positioning the top-right-container */
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.top-right-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    /* Adjusted width for translucent box */
+    height: 250px;
+    /* Adjusted height for translucent box */
+    background: rgba(255, 255, 255, 0.2);
+    /* Translucent background */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-picture img {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: fill;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.doctor-id-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    position: relative;
+    /* Added for positioning the translucent box */
+}
+
+.feature {
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.feature p {
+    margin-bottom: 15px;
+    color: #cfcfcf;
+}
+
+.feature button {
+    padding: 10px 20px;
+    background-color: #00ffae;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.feature button:hover {
+    background-color: #005fcc;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="doctor.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <header>
+        <h1>Welcome to Doctor Dashboard</h1>
+      </header>
+
+      <div class="main-content">
+        <div class="left-section" style="margin-left:40px">
+          <div class="feature" id="affiliation">
+            <h2>Affiliation Request</h2>
+            <p>Request affiliations with different hospitals.</p>
+            <button onclick="showDetails('affiliation')">View Details</button>
+          </div>
+          <div class="feature" id="appointment">
+            <h2>Appointment Details</h2>
+            <p>View and manage your appointment details.</p>
+            <button onclick="showDetails('appointment')">View Details</button>
+          </div>
+          <div class="feature" id="patient-status">
+            <h2>Patient Status</h2>
+            <p>Check the status of patients under your care.</p>
+            <button onclick="showDetails('patient-status')">
+              View Details
+            </button>
+          </div>
+        </div>
+        <div class="doctor-id-container">
+          <div class="doctor-picture">
+            <img src="./WhatsApp Image 2024-09-06 at 02.02.24.jpeg"  alt="Doctor Picture" />
+          </div>
+          <div class="feature" id="timings">
+            <h2 style="text-align:center">DOCTOR ID:SIH1620<h2>
+                <h4>Name: Prashant Kaushik</h4>
+                <h4>Speciality: Dermatologist</h4>
+            <h4>Timings: 10am-5pm</h4>
+            
+            
+            
+            <h4>Consultation Fee: 1200/-</h4>
+           
+            <h4>Location: Pitampura</h4>
+            <h4>Contact-985747XXX </h4>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="doctor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    background: linear-gradient(45deg, #008080, #ADD8E6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    text-align: center;
+}
+
+.login-box h2 {
+    
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.tagline {
+    color: #cfcfcf;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-type {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.user-type input {
+    display: none;
+}
+
+.user-type label {
+    padding: 10px 20px;
+    background: rgba(7, 106, 110, 0.2);
+    color: #30224e;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.user-type input:checked+label {
+    background: #fffb00;
+}
+
+input[type="text"],
+input[type="password"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+    background: #00ffae;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #005fcc;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.options a:hover {
+    color: #00c6ff;
+}
+
+.emergency-btn {
+    background-color: #ff4b2b;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.emergency-btn:hover {
+    background-color: #ff3b1a;
+}
+.logo {
+    border-radius : 50%;
+    width: 100px;
+    /* Set width based on your preference */
+    height: 150px;
+    /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    /* Add spacing below the logo */
+    object-fit: contain;
+    /* Ensures the entire logo is shown without distortion */
+}
